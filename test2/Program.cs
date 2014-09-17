@@ -11,15 +11,13 @@ namespace test2
         static void Main(string[] args)
         {
 
-            int color = 25; // färgerna
-
             //bestäm att den ska skriva ut 25 rader
             for (int row = 0; row < 25; row++)  // for-loop som skriver ut 25 rader.
             {
 
-               Console.WriteLine(); // byter rad
+               Console.WriteLine();             // byter rad
 
-                switch (row % 3) // switch-sats som ska göra så att var tredje rad blir i färgen gul, var tredje magenta och var tredje grön
+                switch (row % 3)                // switch-sats som ska göra så att var tredje rad blir i färgen gul, var tredje magenta och var tredje grön
                 {
                     case 0:
                         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -34,21 +32,17 @@ namespace test2
                         break;
                 }
               
-
                 //bestämm att varannan rad ska vara indragen
-                if (row % 2 != 1)          // varannan gång loopen går runt kommer denna uträkning att stämma i och med att vartannan uträkning blir 1,
+                if (row % 2 != 1)               // varannan gång loopen går runt kommer denna uträkning att stämma i och med att vartannan uträkning blir 1,
                 {
-                    Console.Write(" ");     // därför kommer den skriva ut detta varannan gång.
-
+                    Console.Write(" ");         // därför kommer den skriva ut detta varannan gång.
                 }
+
                 //bestäm att den ska skriva ut 39 kolumner med "*"
                 for (int column = 0; column < 39; column++)  // for-loop som skriver ut 39 kolumner med stjärnor.
                 {
 
-                    Console.Write("* ");
-
-                    //bestäm att var tredje rad ska vara gul, magneta respektive görn. switch-sats
-                  
+                    Console.Write("* ");  
                 }
             }
         }
