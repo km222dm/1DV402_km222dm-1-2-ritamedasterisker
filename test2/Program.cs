@@ -15,7 +15,7 @@ namespace test2
             for (int row = 0; row < 25; row++)  // for-loop som skriver ut 25 rader.
             {
 
-               Console.WriteLine();             // byter rad
+                Console.WriteLine();             // byter rad
 
                 switch (row % 3)                // switch-sats som ska göra så att var tredje rad blir i färgen gul, var tredje magenta och var tredje grön
                 {
@@ -31,7 +31,7 @@ namespace test2
                         Console.ForegroundColor = ConsoleColor.Green;
                         break;
                 }
-              
+
                 //bestämm att varannan rad ska vara indragen
                 if (row % 2 != 1)               // varannan gång loopen går runt kommer denna uträkning att stämma i och med att vartannan uträkning blir 1,
                 {
@@ -42,7 +42,7 @@ namespace test2
                 for (int column = 0; column < 39; column++)  // for-loop som skriver ut 39 kolumner med stjärnor.
                 {
 
-                    Console.Write("* ");  
+                    Console.Write("* ");
                 }
             }
         }
